@@ -1,8 +1,7 @@
+import { KADTable, type KADTableColumn } from '@kad-products/design-system';
 import type { RequestInfo } from 'rwsdk/worker';
-import { KADTable } from '@/components/design-system';
 import { DefaultLayout } from '@/layouts';
 import { getCategories } from '@/repositories';
-import type { KADTableColumn } from '@/types/kad-table';
 
 const columns: KADTableColumn[] = [
 	{ key: 'name', label: 'Name' },
