@@ -1,3 +1,16 @@
+## [1.55.3](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.2...v1.55.3) (2026-09-22)
+
+### Bug Fixes
+
+* add prettier scripts ([377766a](https://github.com/kad-products/rwsdk-jeopardy/commit/377766af5f840ebb7aa87d93b4c8341864abc547))
+* noop for new workflows ([991a1f0](https://github.com/kad-products/rwsdk-jeopardy/commit/991a1f092e62b1ed1f10f1ed105fe499ce234139))
+* noop for new workflows ([63445f6](https://github.com/kad-products/rwsdk-jeopardy/commit/63445f686836b25800d6196e2b6cea6a4d35f18a))
+* playwright gallery doesn't need a full vite config ([4164897](https://github.com/kad-products/rwsdk-jeopardy/commit/41648977a1d35c3c3291d3e423d4826d670d4d0c))
+* properly configure prettier ([0106ddf](https://github.com/kad-products/rwsdk-jeopardy/commit/0106ddfb4dd04edee3894b0c8aee081ef8c7f7b5))
+* references to arsdehnel org changed ([83c0ddc](https://github.com/kad-products/rwsdk-jeopardy/commit/83c0ddcd798b0db8f43d3dbf1159308b53fad3ea))
+* remove local table component ([807aabc](https://github.com/kad-products/rwsdk-jeopardy/commit/807aabc5e685b3270679bfe8f3d96f7152a20183))
+* stop exporting table column type ([26c6a53](https://github.com/kad-products/rwsdk-jeopardy/commit/26c6a53d9cf22d289c099bf0ce79e9b97f6ba8bc))
+
 ## [1.55.2](https://github.com/arsdehnel/rwsdk-jeopardy/compare/v1.55.1...v1.55.2) (2026-09-09)
 
 ### Bug Fixes
