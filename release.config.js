@@ -39,7 +39,7 @@ function getDryRunConfig() {
 
 function getCIConfig() {
 	return {
-		repositoryUrl: 'https://github.com/arsdehnel/rwsdk-jeopardy',
+		repositoryUrl: 'https://github.com/kad-products/rwsdk-jeopardy',
 		branches: ['main'],
 		plugins: [
 			[

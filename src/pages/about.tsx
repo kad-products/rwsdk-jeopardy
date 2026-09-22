@@ -74,7 +74,7 @@ export default async function Pages__about({ ctx }: RequestInfo): Promise<React.
 
 			<h3>Source</h3>
 			<p>
-				The full source is on GitHub: <a href="https://github.com/arsdehnel/rwsdk-jeopardy">arsdehnel/rwsdk-jeopardy</a>.
+				The full source is on GitHub: <a href="https://github.com/kad-products/rwsdk-jeopardy">kad-products/rwsdk-jeopardy</a>.
 			</p>
 		</DefaultLayout>
 	);
