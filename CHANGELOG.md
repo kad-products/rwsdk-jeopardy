@@ -1,3 +1,9 @@
+## [1.55.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.3...v1.55.4) (2026-09-22)
+
+### Bug Fixes
+
+* noop for new workflows ([a0f8dbb](https://github.com/kad-products/rwsdk-jeopardy/commit/a0f8dbb57a526bf3284d7f28bcfc560aa77da2f4))
+
 ## [1.55.3](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.2...v1.55.3) (2026-09-22)
 
 ### Bug Fixes
