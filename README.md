@@ -48,14 +48,16 @@ Contributions welcome. If you're familiar with RedwoodSDK and want to extend the
 
 ## Visual Tests
 
-Component tests use Playwright CT (`@playwright/experimental-ct-react`). Snapshot images are stored in Git and must be generated on Linux to match the CI container. Run the following to update snapshots locally:
+Component tests use Playwright CT. Snapshot images are stored in Git and must be generated on Linux to match the CI container. Run the following to update snapshots locally:
 
 ```sh
 docker run --rm \
   -v $(pwd):/work/ \
   -v /work/node_modules \
   -w /work/ \
-  mcr.microsoft.com/playwright:v1.62.1-noble \
+  -e NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN} \
+  -e CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN} \
+  mcr.microsoft.com/playwright:v1.63.0-noble \
   /bin/sh -c "npm install -g pnpm && pnpm install && pnpm playwright-ct:update"
 ```
 

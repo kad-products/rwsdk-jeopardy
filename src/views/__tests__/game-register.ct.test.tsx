@@ -1,6 +1,5 @@
-import { expect, test } from '@playwright/experimental-ct-react';
+import { expect, test } from '@playwright/test';
 import type { ContestantRegistration, DisplayRegistration, Permission } from '@/types';
-import RegisterShell from '../__shells__/_register-shell';
 
 // ── Shared fixtures ───────────────────────────────────────────────────────────
 
@@ -23,10 +22,6 @@ const PERMISSIONS = {
 const DISPLAY: DisplayRegistration = { sessionId: 'display-session' };
 
 // ── Unregistered user: page-level option visibility ───────────────────────────
-// Full 2×2×3×2 cross-product of slot availability × permissions × contestant count.
-// Note: some of these permutations could render identically in the UI but we
-// render them here to keep this test structure clean and ensure the rendering is
-// indeed what we would expect
 
 type UnregisteredCase = {
 	label: string;
@@ -70,84 +65,71 @@ const UNREGISTERED_CASES: UnregisteredCase[] = [
 
 for (const { label, ...props } of UNREGISTERED_CASES) {
 	test(`registration page — ${label}`, async ({ mount }) => {
-		const component = await mount(<RegisterShell {...props} gameRegistrationUrl={GAME_URL} />);
+		const component = await mount('views/__shells__/_register-shell/Default', { ...props, gameRegistrationUrl: GAME_URL });
 		await expect(component).toHaveScreenshot();
 	});
 }
 
 // ── Registered user: current user role views ──────────────────────────────────
-// When currentUserRole is set the registration options are replaced by
-// RegisterCurrent (and HostOptions for the host role).
 
 test('registration page — registered as display', async ({ mount }) => {
-	const component = await mount(
-		<RegisterShell
-			currentUserRole="display"
-			hasHost={false}
-			hasDisplay={true}
-			contestants={CONTESTANTS.none}
-			userPermissions={PERMISSIONS.host}
-			gameRegistrationUrl={GAME_URL}
-		/>,
-	);
+	const component = await mount('views/__shells__/_register-shell/Default', {
+		currentUserRole: 'display',
+		hasHost: false,
+		hasDisplay: true,
+		contestants: CONTESTANTS.none,
+		userPermissions: PERMISSIONS.host,
+		gameRegistrationUrl: GAME_URL,
+	});
 	await expect(component).toHaveScreenshot();
 });
 
 test('registration page — registered as contestant', async ({ mount }) => {
-	const component = await mount(
-		<RegisterShell
-			currentUserRole="contestant"
-			hasHost={false}
-			hasDisplay={false}
-			contestants={CONTESTANTS.none}
-			userPermissions={PERMISSIONS.host}
-			gameRegistrationUrl={GAME_URL}
-		/>,
-	);
+	const component = await mount('views/__shells__/_register-shell/Default', {
+		currentUserRole: 'contestant',
+		hasHost: false,
+		hasDisplay: false,
+		contestants: CONTESTANTS.none,
+		userPermissions: PERMISSIONS.host,
+		gameRegistrationUrl: GAME_URL,
+	});
 	await expect(component).toHaveScreenshot();
 });
 
 test('registration page — registered as host | no display registered', async ({ mount }) => {
-	const component = await mount(
-		<RegisterShell
-			currentUserRole="host"
-			hasHost={true}
-			hasDisplay={false}
-			display={undefined}
-			contestants={CONTESTANTS.none}
-			userPermissions={PERMISSIONS.host}
-			gameRegistrationUrl={GAME_URL}
-		/>,
-	);
+	const component = await mount('views/__shells__/_register-shell/Default', {
+		currentUserRole: 'host',
+		hasHost: true,
+		hasDisplay: false,
+		contestants: CONTESTANTS.none,
+		userPermissions: PERMISSIONS.host,
+		gameRegistrationUrl: GAME_URL,
+	});
 	await expect(component).toHaveScreenshot();
 });
 
 test('registration page — registered as host | display registered | fewer than 2 contestants', async ({ mount }) => {
-	const component = await mount(
-		<RegisterShell
-			currentUserRole="host"
-			hasHost={true}
-			hasDisplay={true}
-			display={DISPLAY}
-			contestants={CONTESTANTS.one}
-			userPermissions={PERMISSIONS.host}
-			gameRegistrationUrl={GAME_URL}
-		/>,
-	);
+	const component = await mount('views/__shells__/_register-shell/Default', {
+		currentUserRole: 'host',
+		hasHost: true,
+		hasDisplay: true,
+		display: DISPLAY,
+		contestants: CONTESTANTS.one,
+		userPermissions: PERMISSIONS.host,
+		gameRegistrationUrl: GAME_URL,
+	});
 	await expect(component).toHaveScreenshot();
 });
 
 test('registration page — registered as host | display registered | 2+ contestants', async ({ mount }) => {
-	const component = await mount(
-		<RegisterShell
-			currentUserRole="host"
-			hasHost={true}
-			hasDisplay={true}
-			display={DISPLAY}
-			contestants={CONTESTANTS.many}
-			userPermissions={PERMISSIONS.host}
-			gameRegistrationUrl={GAME_URL}
-		/>,
-	);
+	const component = await mount('views/__shells__/_register-shell/Default', {
+		currentUserRole: 'host',
+		hasHost: true,
+		hasDisplay: true,
+		display: DISPLAY,
+		contestants: CONTESTANTS.many,
+		userPermissions: PERMISSIONS.host,
+		gameRegistrationUrl: GAME_URL,
+	});
 	await expect(component).toHaveScreenshot();
 });
