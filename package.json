@@ -30,6 +30,8 @@
 		"playwright-ct:ui": "playwright test -c playwright-ct.config.ts --ui",
 		"playwright-ct:update": "playwright test -c playwright-ct.config.ts --update-snapshots",
 		"prepare": "husky",
+		"prettier:check": "prettier --check .",
+		"prettier:fix": "prettier --write .",
 		"preview": "vite preview",
 		"release": "./scripts/semantic-release.sh",
 		"release:dry-run": "./scripts/semantic-release.sh --dry-run --no-ci",
