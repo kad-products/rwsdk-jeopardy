@@ -1,9 +1,9 @@
+import { KADTable, type KADTableColumn } from '@kad-products/design-system';
 import type { RequestInfo } from 'rwsdk/worker';
-import { KADLink, KADTable } from '@/components/design-system';
+import { KADLink } from '@/components/design-system';
 import { DefaultLayout } from '@/layouts';
 import { getGamesByOwnerId } from '@/repositories';
 import { gamesSchemas } from '@/schemas';
-import type { KADTableColumn } from '@/types/kad-table';
 
 const columns: KADTableColumn[] = [
 	{ key: 'id', label: 'ID' },

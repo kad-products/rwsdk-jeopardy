@@ -12,6 +12,7 @@
 @import "./view-register.less";
 @import "./view-setup.less";
 @import "./welcome.less";
+@import "@kad-products/design-system/styles.css";
 
 body {
 	padding: 0;

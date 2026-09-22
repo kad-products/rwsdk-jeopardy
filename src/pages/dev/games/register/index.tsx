@@ -1,7 +1,6 @@
+import { KADTable, type KADTableColumn } from '@kad-products/design-system';
 import type { RequestInfo } from 'rwsdk/worker';
-import { KADTable } from '@/components/design-system';
 import { RegisterLayout } from '@/layouts';
-import type { KADTableColumn } from '@/types/kad-table';
 import { caughtError } from '../../../utils';
 import { REGISTERED_STATES, UNREGISTERED_STATES } from './_states';
 

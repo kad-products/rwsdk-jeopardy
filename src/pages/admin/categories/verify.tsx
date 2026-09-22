@@ -1,9 +1,8 @@
+import { KADTable, type KADTableColumn } from '@kad-products/design-system';
 import type { RequestInfo } from 'rwsdk/worker';
-import { KADTable } from '@/components/design-system';
 import VerificationForm from '@/forms/verification';
 import { DefaultLayout } from '@/layouts';
 import { getCategoryById } from '@/repositories';
-import type { KADTableColumn } from '@/types';
 
 const columns: KADTableColumn[] = [
 	{ key: 'createdAt', label: 'Verified At' },

@@ -54,6 +54,7 @@
 				"src/schemas/**",
 				".storybook/**",
 				"**/*.stories.tsx",
+				"**/*.story.tsx",
 				"**/*.test.tsx"
 			],
 			"linter": {
