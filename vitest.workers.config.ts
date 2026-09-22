@@ -1,5 +1,5 @@
 import path from 'node:path';
-import { cloudflarePool } from '@cloudflare/vitest-pool-workers';
+import { cloudflarePool } from '@cloudflare/vitest-plugin';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -15,7 +15,7 @@ export default defineConfig({
 			remoteBindings: false,
 			wrangler: { configPath: './wrangler.jsonc' },
 			miniflare: {
-				vars: { SESSION_SECRET_KEY: 'test-secret-key-for-workers-tests' },
+				bindings: { SESSION_SECRET_KEY: 'test-secret-key-for-workers-tests' },
 			},
 		}),
 	},
