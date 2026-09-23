@@ -3,9 +3,15 @@ resource "github_repository_environment" "integration" {
   repository  = github_repository.repo.name
 
   deployment_branch_policy {
-    protected_branches     = true
-    custom_branch_policies = false
+    protected_branches     = false
+    custom_branch_policies = true
   }
+}
+
+resource "github_repository_environment_deployment_policy" "integration_semver_tags" {
+  repository  = github_repository.repo.name
+  environment = github_repository_environment.integration.environment
+  tag_pattern = "v*"
 }
 
 resource "github_repository_environment" "staging" {
@@ -17,9 +23,15 @@ resource "github_repository_environment" "staging" {
   }
 
   deployment_branch_policy {
-    protected_branches     = true
-    custom_branch_policies = false
+    protected_branches     = false
+    custom_branch_policies = true
   }
+}
+
+resource "github_repository_environment_deployment_policy" "staging_semver_tags" {
+  repository  = github_repository.repo.name
+  environment = github_repository_environment.staging.environment
+  tag_pattern = "v*"
 }
 
 resource "github_repository_environment" "production" {
@@ -31,7 +43,13 @@ resource "github_repository_environment" "production" {
   }
 
   deployment_branch_policy {
-    protected_branches     = true
-    custom_branch_policies = false
+    protected_branches     = false
+    custom_branch_policies = true
   }
+}
+
+resource "github_repository_environment_deployment_policy" "production_semver_tags" {
+  repository  = github_repository.repo.name
+  environment = github_repository_environment.production.environment
+  tag_pattern = "v*"
 }
