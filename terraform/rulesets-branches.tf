@@ -4,6 +4,11 @@ resource "github_repository_ruleset" "main" {
   target      = "branch"
   enforcement = "active"
 
+  bypass_actors {
+    actor_type  = "OrganizationAdmin"
+    bypass_mode = "always"
+  }
+
   conditions {
     ref_name {
       include = ["refs/heads/main"]
