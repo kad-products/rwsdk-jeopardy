@@ -35,24 +35,13 @@
 		"preview": "vite preview",
 		"release": "./scripts/semantic-release.sh",
 		"release:dry-run": "./scripts/semantic-release.sh --dry-run --no-ci",
+		"staged:lint": "lint-staged --allow-empty",
 		"test": "vitest",
 		"test:run": "vitest run --coverage",
 		"test:ui": "vitest --ui",
 		"test:workers": "vitest run --config vitest.workers.config.ts",
 		"types:check": "tsc",
 		"worker:run": "rw-scripts worker-run"
-	},
-	"lint-staged": {
-		"*": [
-			"biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
-		],
-		"package.json": [
-			"prettier --write"
-		],
-		"*.{css,less}": [
-			"prettier --write"
-		],
-		"worker-configuration.d.ts": []
 	},
 	"dependencies": {
 		"@dnd-kit/core": "^6.3.1",
