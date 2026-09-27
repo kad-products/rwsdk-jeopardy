@@ -1,3 +1,9 @@
+## [1.57.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.56.0...v1.57.0) (2026-09-27)
+
+### Features
+
+* use shared workflow to apply github config ([7b3be30](https://github.com/kad-products/rwsdk-jeopardy/commit/7b3be30e78ee161d7d06bc8a245a76e216994ee4))
+
 ## [1.56.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.4...v1.56.0) (2026-09-27)
 
 ### Features
