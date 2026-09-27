@@ -1,3 +1,10 @@
+## [1.57.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.57.0...v1.57.1) (2026-09-27)
+
+### Bug Fixes
+
+* import repo into remote state ([17a03e7](https://github.com/kad-products/rwsdk-jeopardy/commit/17a03e7daedc3764b9eed63caeff41671887ee15))
+* use id-based import for repo ([20ddae6](https://github.com/kad-products/rwsdk-jeopardy/commit/20ddae68006b3b3f500fc3bc9e8978061c8fcbe5))
+
 ## [1.57.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.56.0...v1.57.0) (2026-09-27)
 
 ### Features
