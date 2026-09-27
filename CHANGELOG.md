@@ -1,3 +1,20 @@
+## [1.56.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.4...v1.56.0) (2026-09-27)
+
+### Features
+
+* force tags to be semver ([f30308e](https://github.com/kad-products/rwsdk-jeopardy/commit/f30308ea3a4cf5e301369edab70993b0a264c384))
+* initial move to shared opentofu configurations ([7ca1d17](https://github.com/kad-products/rwsdk-jeopardy/commit/7ca1d17947f7c7c31dda1bf668b1d035a4a43612))
+* move to kad-products org ([f52efff](https://github.com/kad-products/rwsdk-jeopardy/commit/f52efff346b079298ec3ebcbf3c84550e8d4ddc9))
+* move to tags for branch deployment rules ([96fa5a3](https://github.com/kad-products/rwsdk-jeopardy/commit/96fa5a39374226377fedc68dadcfcc64854cce27))
+
+### Bug Fixes
+
+* allow org admins to bypass branch rules ([1403766](https://github.com/kad-products/rwsdk-jeopardy/commit/14037662db8b4775f8db7b3631a9bd1bf7c1f5ef))
+* map state type to directory name ([7c749ab](https://github.com/kad-products/rwsdk-jeopardy/commit/7c749ab6bad5cedf05c3470beabc69d51c3b3a09))
+* move from branch protection to branch rulesets ([25eb76d](https://github.com/kad-products/rwsdk-jeopardy/commit/25eb76d3372f6b7086ccf7a5a8fb816ad640319d))
+* no more github pages ([117e7b0](https://github.com/kad-products/rwsdk-jeopardy/commit/117e7b0546ba6e3c40abadc6c5440eee2a51997c))
+* noop for new workflows ([009e15a](https://github.com/kad-products/rwsdk-jeopardy/commit/009e15a0a59d3d648e2f177adca08a4da1ad2425))
+
 ## [1.55.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.55.3...v1.55.4) (2026-09-22)
 
 ### Bug Fixes
