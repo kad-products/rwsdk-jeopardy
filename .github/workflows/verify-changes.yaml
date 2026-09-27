@@ -19,7 +19,7 @@ jobs:
       packages: read
     secrets: inherit
 
-  plan-github-config:
+  plan-github-setup:
     uses: kad-products/platform/.github/workflows/plan-open-tofu.yaml@main
     with:
       app_name: ${{github.event.repository.name}}
