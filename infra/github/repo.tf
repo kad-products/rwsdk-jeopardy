@@ -3,6 +3,12 @@ module "repo" {
 
   repo_name        = "rwsdk-jeopardy"
   repo_description = "Remake of Jeopardy using synced state for multi-device fun"
-  required_checks  = ["Lint Code", "Run Tests"]
   is_product       = true
+  required_checks = [
+    "plan-github-setup / Plan",
+    "lint-code / lint-code",
+    "run-tests / run-tests",
+    "create-release-dry-run / create-release-dry-run",
+    "lint-commits / lint-commits",
+  ]
 }
