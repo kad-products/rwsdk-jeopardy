@@ -22,6 +22,7 @@
 		"db:migrate:remote": "wrangler d1 migrations apply D1_JEOPARDY --remote",
 		"deploy": "rw-scripts ensure-deploy-env && npm run clean && vite build --mode $CLOUDFLARE_ENV && wrangler d1 migrations apply D1_JEOPARDY --remote --env $CLOUDFLARE_ENV && wrangler deploy --env $CLOUDFLARE_ENV",
 		"dev": "vite dev --host",
+		"dev:gallery": "vite --mode gallery",
 		"dev:init": "rw-scripts dev-init",
 		"generate": "rw-scripts ensure-env && wrangler types --include-runtime false && tsx scripts/fix-env-types.ts",
 		"knip:check": "knip",
