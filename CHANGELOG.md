@@ -1,3 +1,13 @@
+## [1.60.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.6...v1.60.0) (2026-09-28)
+
+### Features
+
+* add renovate config calling shared preset ([e8ceb8e](https://github.com/kad-products/rwsdk-jeopardy/commit/e8ceb8ea83b9d0285c3f5a5155f7fa7f95eec220))
+
+### Bug Fixes
+
+* typo in renovate filename ([2f3540a](https://github.com/kad-products/rwsdk-jeopardy/commit/2f3540a0f9b6c2f95816e5178ae2226c18650831))
+
 ## [1.59.6](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.5...v1.59.6) (2026-09-28)
 
 ### Bug Fixes
