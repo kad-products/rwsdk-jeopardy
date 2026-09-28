@@ -23,7 +23,7 @@ export default defineConfig({
 		},
 	],
 	webServer: {
-		command: 'pnpm exec vite --mode gallery',
+		command: './node_modules/.bin/vite --mode gallery',
 		url: 'http://localhost:5173/playwright/gallery/index.html',
 		reuseExistingServer: !process.env.CI,
 	},
