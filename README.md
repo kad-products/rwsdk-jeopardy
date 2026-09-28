@@ -58,7 +58,7 @@ docker run --rm \
   -e NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN} \
   -e CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN} \
   mcr.microsoft.com/playwright:v1.63.0-noble \
-  /bin/sh -c "npm install -g pnpm && pnpm install && pnpm playwright-ct:update"
+  /bin/sh -c "npm install -g --allow-scripts=pnpm && npm install -g pnpm && pnpm config set //npm.pkg.github.com/:_authToken "$NODE_AUTH_TOKEN" && pnpm install && pnpm playwright-ct:update"
 ```
 
 Then commit the updated snapshots alongside your changes.
