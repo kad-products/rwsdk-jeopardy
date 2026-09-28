@@ -1,3 +1,9 @@
+## [1.58.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.58.0...v1.58.1) (2026-09-28)
+
+### Code Refactoring
+
+* move lint-staged to config file and pnpm script ([83ebd8b](https://github.com/kad-products/rwsdk-jeopardy/commit/83ebd8b078e84ba8fd20cd5003214975fe739ce1))
+
 ## [1.58.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.57.1...v1.58.0) (2026-09-28)
 
 ### Features
