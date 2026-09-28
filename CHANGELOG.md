@@ -1,3 +1,9 @@
+## [1.58.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.57.1...v1.58.0) (2026-09-28)
+
+### Features
+
+* move environment definitions to shared tf modules ([119ba37](https://github.com/kad-products/rwsdk-jeopardy/commit/119ba3729f26dada36050ead1e5ffb608d58bbda))
+
 ## [1.57.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.57.0...v1.57.1) (2026-09-27)
 
 ### Bug Fixes
