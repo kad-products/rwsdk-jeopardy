@@ -1,3 +1,9 @@
+## [1.59.5](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.4...v1.59.5) (2026-09-28)
+
+### Bug Fixes
+
+* move to pnpm 12.5.1 ([b45606b](https://github.com/kad-products/rwsdk-jeopardy/commit/b45606bb74d640a8b1b8214f63d0f76f2d939a88))
+
 ## [1.59.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.3...v1.59.4) (2026-09-28)
 
 ### Bug Fixes
