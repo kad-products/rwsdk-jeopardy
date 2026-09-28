@@ -1,3 +1,9 @@
+## [1.58.2](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.58.1...v1.58.2) (2026-09-28)
+
+### Bug Fixes
+
+* **infra:** use the real names of checks ([7a1b607](https://github.com/kad-products/rwsdk-jeopardy/commit/7a1b60794d742e48032b8810d999069972a0bdf5))
+
 ## [1.58.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.58.0...v1.58.1) (2026-09-28)
 
 ### Code Refactoring
