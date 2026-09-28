@@ -1,3 +1,28 @@
+## [1.59.5](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.4...v1.59.5) (2026-09-28)
+
+### Bug Fixes
+
+* move to pnpm 12.5.1 ([b45606b](https://github.com/kad-products/rwsdk-jeopardy/commit/b45606bb74d640a8b1b8214f63d0f76f2d939a88))
+
+## [1.59.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.3...v1.59.4) (2026-09-28)
+
+### Bug Fixes
+
+* move to pnpm 12.4.2 ([2f9a4ad](https://github.com/kad-products/rwsdk-jeopardy/commit/2f9a4adfb20913374a773fc7a62652304c44b983))
+
+## [1.59.3](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.2...v1.59.3) (2026-09-28)
+
+### Bug Fixes
+
+* move to pnpm 12.3.4 ([7915f47](https://github.com/kad-products/rwsdk-jeopardy/commit/7915f47cc473d369c0f836b7f61def639c04458e))
+
+## [1.59.2](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.1...v1.59.2) (2026-09-28)
+
+### Bug Fixes
+
+* update packageManager version to pnpm@12.2.0 ([5b81585](https://github.com/kad-products/rwsdk-jeopardy/commit/5b81585fb63390f92adc97c6a3ff58c1dd31ccdf))
+* upgrade to 12.2.1 because 12.2.0 is broken ([0bbe811](https://github.com/kad-products/rwsdk-jeopardy/commit/0bbe811567d53e14f86502ec2612f7e6fb1b3523))
+
 ## [1.59.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.0...v1.59.1) (2026-09-28)
 
 ### Bug Fixes
