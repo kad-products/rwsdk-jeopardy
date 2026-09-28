@@ -1,3 +1,13 @@
+## [1.59.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.58.2...v1.59.0) (2026-09-28)
+
+### Features
+
+* move environment definitions to shared tf modules ([95984cd](https://github.com/kad-products/rwsdk-jeopardy/commit/95984cdd1cd89cc35b01c3385639bd0c657f3b57))
+
+### Bug Fixes
+
+* revert pnpm to 11.5.3 ([6ef0081](https://github.com/kad-products/rwsdk-jeopardy/commit/6ef0081fe0fd6523a26c9cf010f8ea69c4759c37))
+
 ## [1.58.2](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.58.1...v1.58.2) (2026-09-28)
 
 ### Bug Fixes
