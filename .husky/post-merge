@@ -1,2 +1,2 @@
-pnpm install
+CI=true pnpm install
 pnpm generate
