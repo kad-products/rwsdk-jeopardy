@@ -1,3 +1,9 @@
+## [1.60.2](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.1...v1.60.2) (2026-09-29)
+
+### Bug Fixes
+
+* **deps:** update dependency (non-major) ([#215](https://github.com/kad-products/rwsdk-jeopardy/issues/215)) ([dee0d43](https://github.com/kad-products/rwsdk-jeopardy/commit/dee0d431650b30e5fc2c04a4c5e2d45ae916d3ee))
+
 ## [1.60.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.0...v1.60.1) (2026-09-29)
 
 ### Bug Fixes
