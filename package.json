@@ -71,9 +71,9 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.5",
-		"@cloudflare/vite-plugin": "1.25.1",
+		"@cloudflare/vite-plugin": "1.60.2",
 		"@cloudflare/vitest-plugin": "^1.0.0",
-		"@cloudflare/workers-types": "5.20260922.1",
+		"@cloudflare/workers-types": "5.20260926.1",
 		"@commitlint/cli": "^20.4.1",
 		"@commitlint/config-conventional": "^20.4.1",
 		"@libsql/client": "^0.18.0",
@@ -99,7 +99,7 @@
 		"typescript": "5.9.3",
 		"vite": "7.3.6",
 		"vitest": "^4.1.11",
-		"wrangler": "4.114.0"
+		"wrangler": "4.141.0"
 	},
 	"packageManager": "pnpm@12.7.0"
 }
