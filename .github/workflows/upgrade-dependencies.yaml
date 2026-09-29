@@ -22,6 +22,7 @@ jobs:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           RENOVATE_ONBOARDING: "false"
           RENOVATE_GIT_AUTHOR: "Renovate Bot <renovate[bot]@users.noreply.github.com>"
+          RENOVATE_NPMRC_MERGE: true
           RENOVATE_CI: true
           LOG_LEVEL: debug
           CI: "true"
