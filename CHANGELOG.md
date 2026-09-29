@@ -1,3 +1,9 @@
+## [1.60.1](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.0...v1.60.1) (2026-09-29)
+
+### Bug Fixes
+
+* use renovate.jsonc instead ([f6724ac](https://github.com/kad-products/rwsdk-jeopardy/commit/f6724ac9bcc7f9208af4cb78cca09c0dc42ff7d4))
+
 ## [1.60.0](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.59.6...v1.60.0) (2026-09-28)
 
 ### Features
