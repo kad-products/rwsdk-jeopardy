@@ -8,8 +8,8 @@ jobs:
   deploy-github-config:
     uses: kad-products/platform/.github/workflows/apply-open-tofu.yaml@main
     with:
-      app_name: ${{github.event.repository.name}}
-      state_type: github
-      state_name: setup
-      working_directory: infra/github
+      app-name: ${{github.event.repository.name}}
+      state-type: github
+      state-name: setup
+      working-directory: infra/github
     secrets: inherit
