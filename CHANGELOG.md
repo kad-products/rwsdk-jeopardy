@@ -1,3 +1,10 @@
+## [1.60.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.3...v1.60.4) (2026-10-06)
+
+### Bug Fixes
+
+* allow deploy job to read packages ([b13ac81](https://github.com/kad-products/rwsdk-jeopardy/commit/b13ac817b7f3da2ba27a566c5a2b98f2fbed4dd7))
+* use the right checks for main branch ([43d9214](https://github.com/kad-products/rwsdk-jeopardy/commit/43d9214b556fa431f18d788587c8495751a82704))
+
 ## [1.60.3](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.2...v1.60.3) (2026-10-06)
 
 ### Bug Fixes
