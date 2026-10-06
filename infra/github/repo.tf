@@ -5,10 +5,10 @@ module "repo" {
   repo_description = "Remake of Jeopardy using synced state for multi-device fun"
   is_product       = true
   required_checks = [
-    "plan-github-setup / Plan",
     "lint-code / lint-code",
+    "plan-github-setup / plan-open-tofu",
     "run-tests / run-tests",
-    "create-release-dry-run / create-release-dry-run",
     "lint-commits / lint-commits",
+    "create-release-dry-run / create-release-dry-run",
   ]
 }
