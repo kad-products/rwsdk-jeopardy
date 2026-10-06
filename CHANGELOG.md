@@ -1,3 +1,10 @@
+## [1.60.3](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.2...v1.60.3) (2026-10-06)
+
+### Bug Fixes
+
+* use more recent github tf modules ([637bfe8](https://github.com/kad-products/rwsdk-jeopardy/commit/637bfe8f40d1f4ce1b846f106e6574d39ea6634f))
+* use the right variable in gh tf module ([f4b25e8](https://github.com/kad-products/rwsdk-jeopardy/commit/f4b25e84839148a2df36ad0dca556e91f1ae9b93))
+
 ## [1.60.2](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.1...v1.60.2) (2026-09-29)
 
 ### Bug Fixes
