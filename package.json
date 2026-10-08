@@ -59,21 +59,21 @@
 		"chalk-template": "^1.1.2",
 		"classnames": "^2.5.1",
 		"cookie": "^2.0.1",
-		"drizzle-orm": "1.0.0-rc.4",
+		"drizzle-orm": "1.0.0-rc.5-ab785fc",
 		"qrcode.react": "^4.2.0",
 		"radix-ui": "^1.4.3",
 		"react": "19.3.0",
 		"react-dom": "19.3.0",
 		"react-server-dom-webpack": "19.3.0",
-		"rwsdk": "1.0.0-beta.55",
+		"rwsdk": "1.7.4",
 		"ua-parser-js": "^2.0.10",
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.5",
-		"@cloudflare/vite-plugin": "1.60.2",
+		"@cloudflare/vite-plugin": "1.62.5",
 		"@cloudflare/vitest-plugin": "^1.0.0",
-		"@cloudflare/workers-types": "5.20260926.1",
+		"@cloudflare/workers-types": "5.20261005.1",
 		"@commitlint/cli": "^20.4.1",
 		"@commitlint/config-conventional": "^20.4.1",
 		"@libsql/client": "^0.18.0",
@@ -87,7 +87,7 @@
 		"@types/react-dom": "19.3.0",
 		"@vitest/coverage-v8": "4.1.11",
 		"@vitest/ui": "4.1.11",
-		"drizzle-kit": "1.0.0-rc.4",
+		"drizzle-kit": "1.0.0-rc.5-ab785fc",
 		"husky": "^9.1.7",
 		"jsdom": "^28.1.0",
 		"knip": "^6.32.2",
@@ -99,7 +99,7 @@
 		"typescript": "5.9.3",
 		"vite": "7.3.6",
 		"vitest": "^4.1.11",
-		"wrangler": "4.141.0"
+		"wrangler": "4.147.0"
 	},
 	"packageManager": "pnpm@12.7.0"
 }
