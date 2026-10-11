@@ -1,6 +1,6 @@
 'use client';
+import { KADFormInput } from '@kad-products/sofrito';
 import { Form } from 'radix-ui';
-import { KADFormInput } from '@/components/design-system';
 import { useFieldContext } from './context';
 
 type FieldMeta = {
@@ -103,7 +103,7 @@ export function RadioGroupInput({
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta} controlGroup>
-			<KADFormInput.KADRadioGroup
+			<KADFormInput.RadioGroup
 				label={label}
 				options={options}
 				value={field.state.value}
@@ -128,16 +128,11 @@ export function CheckboxGroupInput({
 	const field = useFieldContext<string[]>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta} controlGroup>
-			<KADFormInput.KADCheckboxGroup
+			<KADFormInput.CheckboxGroup
 				options={options}
 				value={field.state.value}
-				onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-					const current = field.state.value ?? [];
-					if (e.target.checked) {
-						field.handleChange([...current, e.target.value]);
-					} else {
-						field.handleChange(current.filter(v => v !== e.target.value));
-					}
+				onChange={(values: string[]) => {
+					field.handleChange(values);
 					field.handleBlur();
 				}}
 			/>
@@ -149,12 +144,7 @@ export function DateInput({ label, required = false }: { label: string; required
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADDate
-				name={field.name}
-				value={field.state.value}
-				onBlur={field.handleBlur}
-				onChange={(e: React.ChangeEvent<HTMLInputElement>) => field.handleChange(e.target.value)}
-			/>
+			<KADFormInput.Date name={field.name} value={field.state.value} onBlur={field.handleBlur} onChange={field.handleChange} />
 		</FieldComponent>
 	);
 }
@@ -163,12 +153,7 @@ export function NumberInput({ label, required = false }: { label: string; requir
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADNumber
-				name={field.name}
-				value={field.state.value}
-				onBlur={field.handleBlur}
-				onChange={(e: React.ChangeEvent<HTMLInputElement>) => field.handleChange(e.target.value)}
-			/>
+			<KADFormInput.Number name={field.name} value={field.state.value} onBlur={field.handleBlur} onChange={field.handleChange} />
 		</FieldComponent>
 	);
 }
@@ -185,7 +170,7 @@ export function SelectInput({
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADSelect
+			<KADFormInput.Select
 				value={field.state.value}
 				onChange={(value: string): void => {
 					field.handleChange(value);
@@ -201,7 +186,7 @@ export function SwitchInput({ label, required = false }: { label: string; requir
 	const field = useFieldContext<boolean>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADSwitch checked={field.state.value} onChange={field.handleChange} />
+			<KADFormInput.Switch checked={field.state.value} onChange={field.handleChange} />
 		</FieldComponent>
 	);
 }
@@ -210,11 +195,11 @@ export function TextareaInput({ label, required = false }: { label: string; requ
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADTextarea
+			<KADFormInput.Textarea
 				name={field.name}
 				value={field.state.value}
 				onBlur={field.handleBlur}
-				onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => field.handleChange(e.target.value)}
+				onChange={field.handleChange}
 			/>
 		</FieldComponent>
 	);
@@ -224,12 +209,7 @@ export function TextInput({ label, required = false }: { label: string; required
 	const field = useFieldContext<string>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta}>
-			<KADFormInput.KADText
-				name={field.name}
-				value={field.state.value}
-				onBlur={field.handleBlur}
-				onChange={(e: React.ChangeEvent<HTMLInputElement>) => field.handleChange(e.target.value)}
-			/>
+			<KADFormInput.Text name={field.name} value={field.state.value} onBlur={field.handleBlur} onChange={field.handleChange} />
 		</FieldComponent>
 	);
 }
@@ -238,7 +218,7 @@ export function StringArrayInput({ label, required = false }: { label: string; r
 	const field = useFieldContext<string[]>();
 	return (
 		<FieldComponent label={label} required={required} name={field.name} meta={field.state.meta} controlGroup>
-			<KADFormInput.KADStringArray
+			<KADFormInput.StringArray
 				name={field.name}
 				value={field.state.value ?? []}
 				onBlur={field.handleBlur}

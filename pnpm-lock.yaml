@@ -181,9 +181,9 @@ importers:
       '@dnd-kit/utilities':
         specifier: ^3.2.2
         version: 3.2.2(react@19.3.0)
-      '@kad-products/design-system':
-        specifier: ^1.1.1
-        version: 1.1.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+      '@kad-products/sofrito':
+        specifier: 1.6.2
+        version: 1.6.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@radix-ui/react-icons':
         specifier: ^1.3.2
         version: 1.3.2(react@19.3.0)
@@ -1312,8 +1312,8 @@ packages:
     resolution: {integrity: sha512-hloP58zRVCRSpgDxmqCWJNlizAlUgJFqG2ypq79DCvyv9tHjRYMDOcPFjzfl/A1/YxDvRCZz8wvZvmapQnKwFQ==}
     engines: {node: '>=12'}
 
-  '@kad-products/design-system@1.1.2':
-    resolution: {integrity: sha512-KTMN1rzAJ2HFDLgj35BmHdS45viRpRXOjJbSrD8bPrMUlfHGPCh4GQtFb9VRcQk6i9JZuW3ACrp11OzIpWsJ3w==, tarball: https://npm.pkg.github.com/download/@kad-products/design-system/1.1.2/b35e028932549d3459827ba6044df4f07c70c0c7}
+  '@kad-products/sofrito@1.6.2':
+    resolution: {integrity: sha512-4OzwFNRlTkFo1vB137PBno6Hp9BbPkFqbgK2AoYq01vhCZouMQ0C5aI1EBfYD7xgWgQTN521SM0GI7DxrQhyoQ==, tarball: https://npm.pkg.github.com/download/@kad-products/sofrito/1.6.2/a55d6ded2564d6e63eacb7c08fa86dd3dadabdbd}
     peerDependencies:
       react: ^19.0.0
       react-dom: ^19.0.0
@@ -6609,7 +6609,7 @@ snapshots:
     dependencies:
       jsbi: 4.3.2
 
-  '@kad-products/design-system@1.1.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@kad-products/sofrito@1.6.2(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@dnd-kit/core': 6.3.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@dnd-kit/sortable': 10.0.0(@dnd-kit/core@6.3.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
