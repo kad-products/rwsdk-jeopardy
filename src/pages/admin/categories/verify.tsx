@@ -1,4 +1,4 @@
-import { KADTable, type KADTableColumn } from '@kad-products/design-system';
+import { KADTable, type KADTableColumn } from '@kad-products/sofrito';
 import type { RequestInfo } from 'rwsdk/worker';
 import VerificationForm from '@/forms/verification';
 import { DefaultLayout } from '@/layouts';

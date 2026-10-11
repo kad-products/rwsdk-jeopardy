@@ -1,6 +1,6 @@
+import { KADAvatar } from '@kad-products/sofrito';
 import { StrictMode } from 'react';
 import type { DefaultAppContext } from 'rwsdk/worker';
-import { KADAvatar } from '@/components/design-system';
 
 export function PlayLayout({
 	children,

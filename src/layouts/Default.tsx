@@ -1,8 +1,8 @@
+import { KADAvatar } from '@kad-products/sofrito';
 import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
 import classNames from 'classnames';
 import { StrictMode } from 'react';
 import type { DefaultAppContext } from 'rwsdk/worker';
-import { KADAvatar } from '@/components/design-system';
 import { getNavItems } from '@/data/navigation';
 
 export function DefaultLayout({
