@@ -79,7 +79,6 @@
 		"@libsql/client": "^0.18.0",
 		"@playwright/test": "^1.63.0",
 		"@storybook/react": "^10.5.5",
-		"@storybook/test": "^8.6.15",
 		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.2",
 		"@types/node": "~24.19.0",
