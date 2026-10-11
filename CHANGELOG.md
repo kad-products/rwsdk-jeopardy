@@ -1,3 +1,10 @@
+## [1.60.5](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.4...v1.60.5) (2026-10-11)
+
+### Bug Fixes
+
+* remove unused package ([c66dd19](https://github.com/kad-products/rwsdk-jeopardy/commit/c66dd19e28caf5636e54c9428e30d800884d8b3e))
+* upgrade form inputs to sofrito ([38ed844](https://github.com/kad-products/rwsdk-jeopardy/commit/38ed844a81d16b3b237fa874481150ab8e586819))
+
 ## [1.60.4](https://github.com/kad-products/rwsdk-jeopardy/compare/v1.60.3...v1.60.4) (2026-10-06)
 
 ### Bug Fixes
