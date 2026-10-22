@@ -1,5 +1,5 @@
 module "repo" {
-  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.17.0"
+  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.22.2"
 
   repo_name        = "rwsdk-jeopardy"
   repo_description = "Remake of Jeopardy using synced state for multi-device fun"
